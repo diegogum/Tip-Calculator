@@ -31,16 +31,13 @@ struct ContentView: View {
             }
             
             HStack{
-        Text("Tip (\(Int(tipPercentage * 100))%")
+        Text("Tip (\(Int(tipPercentage * 100))%)")
                 Spacer()
                 Text("$\(42.50 * tipPercentage, specifier: "%.2f")")
             }
             Divider()
             HStack{
-                Text("$\(42.50 + 42.50 * tipPercentage, specifier: "%.2f)")")
-                    .bold()
-                Spacer()
-                Text("$51.00")
+                Text("$\(42.50 + 42.50 * tipPercentage, specifier: "%.2f")")
                     .bold()
             }
         }
